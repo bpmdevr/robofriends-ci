@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import CardList from '../components/CardList';
 import SearchBox from '../components/SearchBox';
 import Scroll from '../components/Scroll';
+import CounterButton from '../components/CounterButton';
 import './App.css';
 
 function App() {
@@ -28,6 +29,7 @@ function App() {
    (
       <div className='tc'>
         <h1 className='f1'>RoboFriends</h1>
+        <CounterButton/>
         <SearchBox searchChange={onSearchChange}/>
         <Scroll>
           <CardList robots={filteredRobots} />
